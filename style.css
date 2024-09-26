@@ -184,6 +184,10 @@ a {
     opacity: 0.5;
 }
 
+.docs:link .docs:visited, .docs:active {
+    color:#4689e6 !important;
+}
+
 /* technologies */
 .stack {
     display: flex;
