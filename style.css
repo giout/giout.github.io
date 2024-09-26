@@ -32,6 +32,10 @@ section h2 {
     color: #2B314C;
 }
 
+a {
+    text-decoration:none !important;
+}
+
 /* navbar */
 .custom-navbar {
     background-color: #2B314C;
@@ -93,8 +97,8 @@ section h2 {
     font-size: 1rem;
     cursor: pointer;
     gap:0.5rem;
+    color: white;
 }
-
 .cv:hover{
     background-color: white;
     color: #2B314C;
