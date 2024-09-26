@@ -1,7 +1,18 @@
+/* Navbar */
 .custom-navbar {
     background-color: #2B314C;
 }
 
 .custom-navbar .nav-link {
     color: white;
+}
+
+.nav-link:hover {
+    background-color: #2B314C;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
