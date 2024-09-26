@@ -84,3 +84,14 @@ section h2 {
     background-color: white;
     color: #2B314C;
 }
+
+/* about */
+.about {
+    color:#2B314C;
+    padding: 2rem;
+    min-height:250px;
+}
+
+.about-container {
+    width: 60%;
+}
