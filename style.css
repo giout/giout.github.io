@@ -1,4 +1,10 @@
 /* general */
+* {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -6,9 +12,6 @@ section {
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 section h1 {
