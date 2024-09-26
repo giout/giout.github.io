@@ -75,13 +75,15 @@
     <section class="experience">
       <div class="d-flex justify-content-center align-items-center flex-column">
         <h1>Experiencia</h1>
-        <div class="card card-experience mt-4">
-          <img class="card-img-top" src="img/binwus.png" alt="BINWUS VENEZUELA C.A.">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">BINWUS VENEZUELA C.A.</li>
-            <li class="list-group-item">Desarrollador pasante (06/2024-07/2024)</li>
-            <li class="list-group-item">Colaboré en el desarrollo y documentación de APIs REST, haciendo uso de Node.js (con Javascript y Typescript), Express y Swagger. Asimismo, diseñé e implementé bases de datos PostgreSQL y Redis.</li>
-          </ul>
+        <div class="experience-container">
+          <div class="card card-experience mt-4">
+            <img class="card-img-top" src="img/binwus.png" alt="BINWUS VENEZUELA C.A.">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">BINWUS VENEZUELA C.A.</li>
+              <li class="list-group-item">Desarrollador pasante (06/2024-07/2024)</li>
+              <li class="list-group-item">Colaboré en el desarrollo y documentación de APIs REST, haciendo uso de Node.js (con Javascript y Typescript), Express y Swagger. Asimismo, diseñé e implementé bases de datos PostgreSQL y Redis.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -91,7 +93,7 @@
         <h1>Proyectos</h1>
         <p class="mt-2">Algunos de mis proyectos personales y académicos...</p>
         <div class="projects-cards-container mt-2">
-          <div class="card card-project">
+          <div class="card card-project p">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <div class="card-grid-container">
@@ -108,16 +110,62 @@
               <li class="list-group-item">
                 <img class="card-img-top" src="img/rotten-tomatoes.jpeg" alt="BINWUS VENEZUELA C.A.">
               </li>
-              <li class="list-group-item">Servicio web que se conecta a la API pública “The Movie Database” para obtener datos de cine y permite a los usuarios visualizarlos y realizar ratings, comentarios, entre otros. En la documentación se describen a detalle sus funcionalidades.</li>
+              <li class="list-group-item">Servicio web que se conecta a la API pública “The Movie Database” para obtener datos de cine y permite a los usuarios visualizarlos y realizar ratings, comentarios, entre otros. En la documentación se describen a detalle sus funcionalidades. El servicio puede tardar algunos minutos en responder, ya que se suspende por cierto tiempo de inactividad.</li>
+            </ul>
+          </div>
+          <div class="card card-project">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="card-grid-container">
+                  <div class="card-grid">
+                    <div class="d-flex justify-content-center align-items-center">
+                      Juego web
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <img class="rounded-circle github-item" src="img/github.png" alt="Github">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item img">
+                <img class="card-img-top" src="img/bomb-game.png" alt="BINWUS VENEZUELA C.A.">
+              </li>
+              <li class="list-group-item">Juego desarrollado en la web que consiste en presionar en el teclado el número correspondiente de cada bomba para que no impacte en la casa. Puedes jugarlo en este link.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
     <!--technologies-->
-    <section></section>
+    <section class="technologies">
+      <div class="d-flex justify-content-center align-items-center flex-column w-100">
+        <h1>Tecnologías</h1>
+        <p class="mt-2 mb-4">Lenguajes, frameworks y bases de datos que utilizo con frecuencia...</p>
+        <div class="stack">
+          <img class="tech-item" src="img/nodejs.webp" alt="Node.js">
+          <img class="tech-item" src="img/python.png" alt="Python">
+          <img class="tech-item" src="img/express.png" alt="Express">
+          <img class="tech-item" src="img/django.png" alt="Django">
+          <img class="tech-item" src="img/postgresql.png" alt="PostgreSQL">
+          <img class="tech-item" src="img/mongodb.webp" alt="MongoDB">
+        </div>
+      </div>
+    </section>
     <!--education-->
-    <section></section>
+    <section class="education">
+      <div class="d-flex justify-content-center align-items-center flex-column"></div>
+        <h1>Educación</h1>
+        <div class="education-container">
+          <div class="card card-experience mt-4">
+            <img class="card-img-top" src="img/uru.png" alt="Universidad Rafael Urdaneta">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Universidad Rafael Urdaneta</li>
+              <li class="list-group-item">Ingeniería en computación (2019-2024)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
