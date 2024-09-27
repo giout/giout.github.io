@@ -204,8 +204,6 @@ a {
     border-radius: 5%;
 }
 
-/* education */
-
 @media screen and (max-width: 510px){
     .card-experience {
         width: 20rem;
