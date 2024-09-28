@@ -173,23 +173,23 @@ a {
     color: #2B314C;
 }
 
-.card-flex:hover {
+.card-flex:active {
     color: white;
 }
 
-.github-card-flex:hover {
+.github-card-flex:active {
     background-color: #2B314C;
 }
 
-.youtube-card-flex:hover {
+.youtube-card-flex:active {
     background-color: #FF0000;
 }
 
-.doc-card-flex:hover {
+.doc-card-flex:active {
     background-color: #ef5b25;
 }
 
-.game-card-flex:hover {
+.game-card-flex:active {
     background-color: #1bab30;
 }
 
