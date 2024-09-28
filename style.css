@@ -157,31 +157,40 @@ a {
     color:#2B314C !important;
 }
 
-.card-grid-container {
+.btn {
+    padding: 0 !important;
+}
+
+.card-flex {
     width: 100%;
     height: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    color: #2B314C;
 }
 
-.card-grid {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 100%;
+.card-flex:hover {
+    color: white;
 }
 
-.github-item {
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
+.github-card-flex:hover {
+    background-color: #2B314C;
 }
 
-.github-item:hover {
-    opacity: 0.5;
+.youtube-card-flex:hover {
+    background-color: #FF0000;
+}
+
+.doc-card-flex:hover {
+    background-color: #ef5b25;
+}
+
+.game-card-flex:hover {
+    background-color: #1bab30;
 }
 
 .docs:link .docs:visited, .docs:active {
