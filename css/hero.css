@@ -1,0 +1,43 @@
+.hero {
+    min-height: 450px;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+}
+
+.social {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.social-item {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.social-item:hover {
+    opacity: 0.5;
+}
+
+.cv {
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 170px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    gap:0.5rem;
+    color: white;
+}
+.cv:hover{
+    background-color: white;
+    color: #2B314C;
+}
