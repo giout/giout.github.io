@@ -16,7 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-    <title>Giovanni Urdaneta | Portafolio</title>
+    <title>Giovanni Urdaneta | Portfolio</title>
+    <!--Javascript-->
+    <script src="js/dom.js" type="module" defer></script>
+    <script src="js/set-english.js" type="module" defer></script>
+    <script src="js/set-spanish.js" type="module" defer></script>
+    <script src="js/index.js" type="module" defer></script>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </head>
@@ -30,21 +35,20 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre mí</a>
+                <a class="nav-link" href="#about" id="about-nav">Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience">Experiencia</a>
+                <a class="nav-link" href="#experience" id="experience-nav">Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Proyectos</a>
+                <a class="nav-link" href="#projects" id="projects-nav">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#technologies">Tecnologías</a>
+                <a class="nav-link" href="#technologies" id="technologies-nav">Tecnologías</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#education">Educación</a>
+                <a class="nav-link" href="#education" id="education-nav">Educación</a>
               </li>
-              <!--
               <li class="nav-item">
                 <a class="nav-link">
                   <div class="d-flex justify-content-center align-items-center flex-row w-100 h-100 translate" id="translate-btn">
@@ -52,14 +56,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
                       </svg>
-                      <div class="d-flex justify-content-center align-items-center" id="language">
-                        ES
-                      </div>
+                      <div class="d-flex justify-content-center align-items-center" id="language">ES</div>
                     </div>
                   </div>
                 </a>
               </li>
-              -->
             </ul>
           </div>
         </div>
@@ -69,7 +70,7 @@
       <div class="d-flex justify-content-center align-items-center flex-column">
         <img id="profile" class="rounded-circle" src="img/giovanni-urdaneta.jpg" alt="Foto de Giovanni Urdaneta">
         <h1 class="mt-2">Giovanni Urdaneta</h1>
-        <h2 class="mt-1">Desarrollador de software</h2>
+        <h2 class="mt-1" id="role">Desarrollador de software</h2>
         <div class="social mt-2">
           <a href="https://github.com/giout" target=”_blank”>
             <img class="rounded-circle social-item" src="img/github.svg" alt="Github">
@@ -88,7 +89,7 @@
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
               </svg>
-              <div class="download-text">CV español</div> 
+              <div class="download-text" id="cv-spanish">CV español</div> 
             </div>
           </a>
           <a href="cv-en.pdf" download="cv-giovanniurdaneta-en.pdf">
@@ -97,7 +98,7 @@
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
               </svg>
-              <div class="download-text">CV inglés</div> 
+              <div class="download-text" id="cv-english">CV inglés</div> 
             </div>
           </a>
         </div>
@@ -106,8 +107,8 @@
     <!--about-->
     <section class="about" id="about">
       <div class="about-container d-flex justify-content-center align-items-center flex-column">
-        <h1>Sobre mí</h1>
-        <p class="mt-2">
+        <h1 id="about-title">Sobre mí</h1>
+        <p class="mt-2" id="about-content">
           Soy un ingeniero en computación dedicado al desarrollo de software. Mis objetivos son: crecer profesionalmente y aportar valor en el entorno empresarial, y pienso cumplirlos desarrollando aplicaciones escalables, comprensibles y documentadas, de la mano de la adaptabilidad, disciplina, trabajo en equipo y aprendizaje continuo.
         </p>
       </div>
@@ -115,22 +116,22 @@
     <!--experience-->
     <section class="experience" id="experience">
       <div class="d-flex justify-content-center align-items-center flex-column">
-        <h1>Experiencia</h1>
+        <h1 id="experience-title">Experiencia</h1>
         <div class="experience-container">
           <div class="card card-experience mt-4">
             <img class="card-img-top" src="img/binwus.png" alt="BINWUS VENEZUELA C.A.">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">BINWUS VENEZUELA C.A.</li>
-              <li class="list-group-item">Desarrollador pasante (06/2024-07/2024)</li>
-              <li class="list-group-item">Colaboré en el desarrollo y documentación de APIs REST, haciendo uso de Node.js (con Javascript y Typescript), Express y Swagger. Asimismo, diseñé e implementé bases de datos PostgreSQL y Redis.</li>
+              <li class="list-group-item" id="binwus-role">Desarrollador pasante (06/2024-07/2024)</li>
+              <li class="list-group-item" id="binwus-description">Colaboré en el desarrollo y documentación de APIs REST, haciendo uso de Node.js (con Javascript y Typescript), Express y Swagger. Asimismo, diseñé e implementé bases de datos PostgreSQL y Redis.</li>
             </ul>
           </div>
           <div class="card card-experience mt-4">
             <img class="card-img-top" src="img/redieluz.jpeg" alt="REDIELUZ">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">VIII Congreso REDIELUZ</li>
-              <li class="list-group-item">Ponente en el V Encuentro Iberoamericano de Estudiantes Investigadores (09/10/2024)</li>
-              <li class="list-group-item">Ponencia realizada: "Aplicación web para la simulación de un laboratorio dirigido al aprendizaje de la electrónica digital".</li>
+              <li class="list-group-item" id="redieluz-role">Ponente en el V Encuentro Iberoamericano de Estudiantes Investigadores (09/10/2024)</li>
+              <li class="list-group-item" id="redieluz-description">Ponencia realizada: "Aplicación web para la simulación de un laboratorio dirigido al aprendizaje de la electrónica digital".</li>
             </ul>
           </div>
         </div>
@@ -139,21 +140,19 @@
     <!--projects-->
     <section class="projects" id="projects">
       <div class="projects-container d-flex justify-content-center align-items-center flex-column">
-        <h1>Proyectos</h1>
-        <p class="mt-2">Algunos de mis proyectos personales y académicos...</p>
+        <h1 id="projects-title">Proyectos</h1>
+        <p class="mt-2" id="projects-content">Algunos de mis proyectos personales y académicos...</p>
         <div class="projects-cards-container mt-2">
           <!--project-->
           <div class="card card-project p">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="d-flex justify-content-center align-items-center">
-                  API REST de Rotten Tomatoes
-                </div>
+                <div class="d-flex justify-content-center align-items-center" id="rotten-title">API REST de Rotten Tomatoes</div>
               </li>
               <li class="list-group-item">
                 <img class="card-img-top" src="img/rotten-tomatoes.jpeg" alt="Rotten tomatoes">
               </li>
-              <li class="list-group-item">Servicio web que se conecta a la API pública “The Movie Database” para obtener datos de cine y permite a los usuarios visualizarlos. Asimismo, se conecta a una base de datos relacional para que los usuarios puedan realizar ratings, comentarios, entre otros.</li>
+              <li class="list-group-item" id="rotten-content">Servicio web que se conecta a la API pública “The Movie Database” para obtener datos de cine y permite a los usuarios visualizarlos. Asimismo, se conecta a una base de datos relacional para que los usuarios puedan realizar ratings, comentarios, entre otros.</li>
               <li class="list-group-item btn">
                 <a href="https://documenter.getpostman.com/view/27562812/2s9YkgEkmM" target=”_blank”>
                   <div class="card-flex doc-card-flex">
@@ -161,7 +160,7 @@
                       <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
                       <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
                     </svg>
-                    <div>Documentación de la API</div>
+                    <div class="api-documentation">Documentación de la API</div>
                   </div>
                 </a>
               </li>
@@ -171,7 +170,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                     </svg>
-                    <div>Código fuente</div>
+                    <div class="source-code">Código fuente</div>
                   </div>
                 </a>
               </li>
@@ -181,7 +180,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                     </svg>
-                    <div>Video de demostración</div>
+                    <div class="yt-video">Video de demostración</div>
                   </div>
                 </a>
               </li>
@@ -191,21 +190,19 @@
           <div class="card card-project p">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="d-flex justify-content-center align-items-center">
-                  Laboratorio virtual de electrónica digital
-                </div>
+                <div class="d-flex justify-content-center align-items-center" id="lab-title">Laboratorio virtual de electrónica digital</div>
               </li>
               <li class="list-group-item">
                 <img class="card-img-top" src="img/lab.png" alt="Laboratorio virtual">
               </li>
-              <li class="list-group-item">Entorno virtual en el que profesor y estudiantes transmiten en tiempo real audio y simulaciones de circuitos lógicos gracias a la implementación de los protocolos WebRTC y WebSocket. Este es prototipo resultante de mi trabajo especial de grado para optar por el título de Ingeniería en Computación. Lo desarrollé en colaboración con <a target="_blank" href="https://www.linkedin.com/in/juan-romero-ab0681290/">Juan Romero</a>.</li>
+              <li class="list-group-item" id="lab-content">Entorno virtual en el que profesor y estudiantes transmiten en tiempo real audio y simulaciones de circuitos lógicos gracias a la implementación de los protocolos WebRTC y WebSocket. Este es prototipo resultante de mi trabajo especial de grado para optar por el título de Ingeniería en Computación.</li>
               <li class="list-group-item btn">
                 <a href="https://youtu.be/YUu0067rZLc" target=”_blank”>
                   <div class="card-flex youtube-card-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                     </svg>
-                    <div>Video de demostración</div>
+                    <div class="yt-video">Video de demostración</div>
                   </div>
                 </a>
               </li>
@@ -216,22 +213,20 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <div class="card-grid-container">
-                  <div class="d-flex justify-content-center align-items-center">
-                    Balanceador de carga
-                  </div>
+                  <div class="d-flex justify-content-center align-items-center" id="balancer-title">Balanceador de carga</div>
                 </div>
               </li>
               <li class="list-group-item img">
                 <img class="card-img-top" src="img/balancer.png" alt="Balanceador de carga">
               </li>
-              <li class="list-group-item">Servicio web que se conecta a tres microservicios conectados a una base de datos relacional que devuelven la misma información y que elige a cual pedirle los datos en base al rendimiento en tiempo real de cada uno (RAM, CPU, etc.).</li>
+              <li class="list-group-item" id="balancer-content">Servicio web que se conecta a tres microservicios conectados a una base de datos relacional que devuelven la misma información y que elige a cual pedirle los datos en base al rendimiento en tiempo real de cada uno (RAM, CPU, etc.).</li>
               <li class="list-group-item btn">
                 <a href="https://github.com/giout/balancer" target=”_blank”>
                   <div class="card-flex github-card-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                     </svg>
-                    <div>Código fuente</div>
+                    <div class="source-code">Código fuente</div>
                   </div>
                 </a>
               </li>
@@ -241,7 +236,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                     </svg>
-                    <div>Video de demostración</div>
+                    <div class="yt-video">Video de demostración</div>
                   </div>
                 </a>
               </li>
@@ -251,14 +246,12 @@
           <div class="card card-project">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="d-flex justify-content-center align-items-center">
-                  Juego web
-                </div>
+                <div class="d-flex justify-content-center align-items-center" id="game-title">Juego web</div>
               </li>
               <li class="list-group-item img">
                 <img class="card-img-top" src="img/bomb-game.png" alt="Juego web">
               </li>
-              <li class="list-group-item">Juego desarrollado para la web que consiste en presionar en el teclado el número correspondiente de cada bomba para que no impacte en la casa. Puedes jugarlo en este <a href="https://bomb-game-tawny.vercel.app/" target=”_blank” class="docs">link</a>.</li>
+              <li class="list-group-item" id="game-content">Juego desarrollado para la web que consiste en presionar en el teclado el número correspondiente de cada bomba para que no impacte en la casa.</li>
               <li class="list-group-item btn">
                 <a href="https://bomb-game-tawny.vercel.app/" target=”_blank”>
                   <div class="card-flex game-card-flex">
@@ -266,7 +259,7 @@
                       <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
                       <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
                     </svg>
-                    <div>Link al juego</div>
+                    <div class="game-link">Link al juego</div>
                   </div>
                 </a>
               </li>
@@ -276,7 +269,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                     </svg>
-                    <div>Código fuente</div>
+                    <div class="source-code">Código fuente</div>
                   </div>
                 </a>
               </li>
@@ -286,7 +279,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                     </svg>
-                    <div>Video de demostración</div>
+                    <div class="yt-video">Video de demostración</div>
                   </div>
                 </a>
               </li>
@@ -298,8 +291,8 @@
     <!--technologies-->
     <section class="technologies" id="technologies">
       <div class="d-flex justify-content-center align-items-center flex-column w-100">
-        <h1>Tecnologías</h1>
-        <p class="mt-2 mb-4">Lenguajes, frameworks y bases de datos que utilizo con frecuencia...</p>
+        <h1 id="technologies-title">Tecnologías</h1>
+        <p class="mt-2 mb-4" id="technologies-content">Lenguajes, frameworks y bases de datos que utilizo con frecuencia...</p>
         <div class="stack">
           <img class="tech-item" src="img/nodejs.webp" alt="Node.js">
           <img class="tech-item" src="img/python.png" alt="Python">
@@ -313,13 +306,13 @@
     <!--education-->
     <section class="education" id="education">
       <div class="d-flex justify-content-center align-items-center flex-column"></div>
-        <h1>Educación</h1>
+        <h1 id="education-title">Educación</h1>
         <div class="education-container">
           <div class="card card-experience mt-4">
             <img class="card-img-top" src="img/uru.png" alt="Universidad Rafael Urdaneta">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Universidad Rafael Urdaneta</li>
-              <li class="list-group-item">Ingeniería en computación (2024)</li>
+              <li class="list-group-item" id="uru-career">Ingeniería en computación (2024)</li>
             </ul>
           </div>
         </div>
