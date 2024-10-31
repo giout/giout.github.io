@@ -1,16 +1,137 @@
-@import "about.css";
-@import "experience.css";
-@import "hero.css";
-@import "navbar.css";
-@import "projects.css";
-@import "technologies.css";
-
 * {
     font-family: "Playwrite DE Grund", cursive;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+a {
+    text-decoration:none !important;
+}
+.about {
+    min-height:250px;
+}
+.about-container {
+    width: 70%;
+}
+.about, .projects, .education {
+    background-color: #ffffff;
+    color: #2B314C;
+}
+body {
+    margin: 0;
+}
+.btn {
+    padding: 0 !important;
+}
+.card-experience {
+    width: 30rem;
+    color:#2B314C;
+    border-color:#2B314C !important;
+}
+.card-experience .list-group .list-group-item {
+    color: #2B314C;
+    border-color:#2B314C !important;
+}
+.card-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    color: #2B314C;
+}
+.card-flex:active {
+    color: white;
+}
+.card-project {
+    width: 20rem;
+    border-color:#2B314C !important;
+    color:#2B314C !important;
+}
+.card-project .list-group .list-group-item{
+    border-color:#2B314C !important;
+    color:#2B314C !important;
+}
+.card-title {
+    font-size: 1.1rem;
+}
+.cv {
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 170px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    gap:0.5rem;
+    color: white;
+}
+.cv:hover{
+    background-color: white;
+    color: #2B314C;
+}
+.custom-navbar {
+    background-color: #2B314C;
+}
+.custom-navbar .nav-link {
+    color: white;
+}
+.doc-card-flex:active {
+    background-color: #ef5b25;
+}
+.docs:link .docs:visited, .docs:active {
+    color:#4689e6 !important;
+}
+.experience-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-card-flex:active {
+    background-color: #1bab30;
+}
+.github-card-flex:active {
+    background-color: #2B314C;
+}
+.hero {
+    min-height: 450px;
+}
+.hero, .experience, .technologies, footer {
+    background-color: #2B314C;
+    color: white;
+}
+.nav-link:hover {
+    background-color: #2B314C;
+}
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#profile {
+    width: 200px;
+    height: 200px;
+}
+.projects-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 section {
     display: flex;
     flex-direction: column;
@@ -19,25 +140,53 @@ section {
     text-align: center;
     padding: 2rem;
 }
-
 section h1 {
     font-size: 2.2rem;
 }
-
 section h2 {
     font-size: 1.2rem;
 }
-
-.hero, .experience, .technologies, footer {
-    background-color: #2B314C;
-    color: white;
+.social {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+.social-item {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.social-item:hover {
+    opacity: 0.5;
+}
+.stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.tech-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+}
+.translate {
+    cursor: pointer;
+}
+.youtube-card-flex:active {
+    background-color: #FF0000;
 }
 
-.about, .projects, .education {
-    background-color: #ffffff;
-    color: #2B314C;
-}
-
-a {
-    text-decoration:none !important;
+@media screen and (max-width: 510px){
+    .card-experience {
+        width: 20rem;
+    }
 }

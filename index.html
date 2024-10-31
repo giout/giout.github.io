@@ -26,6 +26,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </head>
 <body>
+  <header>
     <!--navbar-->
     <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
         <div class="container-fluid">
@@ -65,6 +66,8 @@
           </div>
         </div>
     </nav>
+  </header>
+  <main>
     <!--hero-->
     <section class="hero">
       <div class="d-flex justify-content-center align-items-center flex-column">
@@ -80,26 +83,6 @@
           </a>
           <a href="mailto:giovanniurdanetatulli@gmail.com" target=”_blank”>
             <img class="rounded-circle social-item" src="img/email.png" alt="Email">
-          </a>
-        </div>
-        <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mt-3 mb-2">
-          <a href="cv-es.pdf" download="cv-giovanniurdaneta-es.pdf">
-            <div class="cv d-flex justify-content-center align-items-center flex-row">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-              </svg>
-              <div class="download-text" id="cv-spanish">CV español</div> 
-            </div>
-          </a>
-          <a href="cv-en.pdf" download="cv-giovanniurdaneta-en.pdf">
-            <div class="cv d-flex justify-content-center align-items-center flex-row">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-              </svg>
-              <div class="download-text" id="cv-english">CV inglés</div> 
-            </div>
           </a>
         </div>
       </div>
@@ -195,7 +178,7 @@
               <li class="list-group-item">
                 <img class="card-img-top" src="img/lab.png" alt="Laboratorio virtual">
               </li>
-              <li class="list-group-item" id="lab-content">Entorno virtual en el que profesor y estudiantes transmiten en tiempo real audio y simulaciones de circuitos lógicos gracias a la implementación de los protocolos WebRTC y WebSocket. Este es prototipo resultante de mi trabajo especial de grado para optar por el título de Ingeniería en Computación.</li>
+              <li class="list-group-item" id="lab-content">Entorno virtual en el que profesor y estudiantes transmiten en tiempo real audio y simulaciones de circuitos lógicos gracias a la implementación de los protocolos WebRTC y WebSocket. Este es el prototipo resultante de mi trabajo especial de grado para optar por el título de Ingeniería en Computación.</li>
               <li class="list-group-item btn">
                 <a href="https://youtu.be/YUu0067rZLc" target=”_blank”>
                   <div class="card-flex youtube-card-flex">
@@ -292,7 +275,7 @@
     <section class="technologies" id="technologies">
       <div class="d-flex justify-content-center align-items-center flex-column w-100">
         <h1 id="technologies-title">Tecnologías</h1>
-        <div class="stack">
+        <div class="stack mt-4">
           <img class="tech-item" src="img/html.png" alt="HTML">
           <img class="tech-item" src="img/css.png" alt="CSS">
           <img class="tech-item" src="img/javascript.png" alt="Javascript">
@@ -322,5 +305,9 @@
         </div>
       </div>
     </section>
+  </main>
+  <footer>
+    <span>Giovanni Urdaneta - 2024</span>
+  </footer>
 </body>
 </html>

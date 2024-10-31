@@ -1,4 +1,4 @@
-import { aboutContent, aboutNav, aboutTitle, apiDocumentations, balancerContent, balancerTitle, binwusDescription, binwusRole, cvEnglish, cvSpanish, educationNav, educationTitle, experienceNav, experienceTitle, gameContent, gameLinks, gameTitle, labContent, labTitle, projectsContent, projectsNav, projectsTitle, redieluzDescription, redieluzRole, role, rottenContent, rottenTitle, sourceCodes, technologiesContent, technologiesNav, technologiesTitle, uruCareer, videos } from "./dom.js"
+import { aboutContent, aboutNav, aboutTitle, apiDocumentations, balancerContent, balancerTitle, binwusDescription, binwusRole, educationNav, educationTitle, experienceNav, experienceTitle, gameContent, gameLinks, gameTitle, labContent, labTitle, projectsContent, projectsNav, projectsTitle, redieluzDescription, redieluzRole, role, rottenContent, rottenTitle, sourceCodes, technologiesNav, technologiesTitle, uruCareer, videos } from "./dom.js"
 
 export const setEnglish = () => {
     aboutNav.innerText = 'About'
@@ -7,8 +7,6 @@ export const setEnglish = () => {
     technologiesNav.innerText = 'Technologies'
     educationNav.innerText = 'Education'
     role.innerText = 'Web developer'
-    cvSpanish.innerText = 'CV spanish'
-    cvEnglish.innerText = 'CV english'
     aboutTitle.innerText = 'About'
     aboutContent.innerText = 'I am a computer engineer dedicated to web development and databases. My goals are to grow professionally and contribute value to the business environment. I plan to achieve these goals by developing scalable, understandable, and well-documented applications, through adaptability, discipline, teamwork, and continuous learning.'
     experienceTitle.innerText = 'Experience'
@@ -39,7 +37,6 @@ export const setEnglish = () => {
         element.innerText = 'Game link'
     })
     technologiesTitle.innerText = 'Technologies'
-    technologiesContent.innerText = 'Languages, frameworks and databases i frequently use...'
     educationTitle.innerText = 'Education'
     uruCareer.innerText = 'Computer engineering (2024)'
 }

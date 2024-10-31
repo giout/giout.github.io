@@ -31,7 +31,6 @@ export const gameTitle = document.getElementById('game-title')
 export const gameContent = document.getElementById('game-content')
 export const gameLinks = Array.from(document.querySelectorAll('.game-link'))
 export const technologiesTitle = document.getElementById('technologies-title')
-export const technologiesContent = document.getElementById('technologies-content')
 export const educationTitle = document.getElementById('education-title')
 export const uruCareer = document.getElementById('uru-career')
 

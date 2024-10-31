@@ -1,4 +1,4 @@
-import { aboutContent, aboutNav, aboutTitle, apiDocumentations, balancerContent, balancerTitle, binwusDescription, binwusRole, cvEnglish, cvSpanish, educationNav, educationTitle, experienceNav, experienceTitle, gameContent, gameLinks, gameTitle, labContent, labTitle, projectsContent, projectsNav, projectsTitle, redieluzDescription, redieluzRole, role, rottenContent, rottenTitle, sourceCodes, technologiesContent, technologiesNav, technologiesTitle, uruCareer, videos } from "./dom.js"
+import { aboutContent, aboutNav, aboutTitle, apiDocumentations, balancerContent, balancerTitle, binwusDescription, binwusRole, educationNav, educationTitle, experienceNav, experienceTitle, gameContent, gameLinks, gameTitle, labContent, labTitle, projectsContent, projectsNav, projectsTitle, redieluzDescription, redieluzRole, role, rottenContent, rottenTitle, sourceCodes, technologiesNav, technologiesTitle, uruCareer, videos } from "./dom.js"
 
 export const setSpanish = () => {
     aboutNav.innerText = 'Sobre mí'
@@ -7,8 +7,6 @@ export const setSpanish = () => {
     technologiesNav.innerText = 'Tecnologías'
     educationNav.innerText = 'Educación'
     role.innerText = 'Desarrollador web'
-    cvSpanish.innerText = 'CV español'
-    cvEnglish.innerText = 'CV inglés'
     aboutTitle.innerText = 'Sobre mí'
     aboutContent.innerText = 'Soy un ingeniero en computación dedicado al desarrollo web y bases de datos. Mis objetivos son: crecer profesionalmente y aportar valor en el entorno empresarial, y pienso cumplirlos desarrollando aplicaciones escalables, comprensibles y documentadas, de la mano de la adaptabilidad, disciplina, trabajo en equipo y aprendizaje continuo.'
     experienceTitle.innerText = 'Experiencia'
@@ -39,7 +37,6 @@ export const setSpanish = () => {
         element.innerText = 'Link al juego'
     })
     technologiesTitle.innerText = 'Tecnologías'
-    technologiesContent.innerText = 'Lenguajes, frameworks y bases de datos que utilizo con frecuencia...'
     educationTitle.innerText = 'Educación'
     uruCareer.innerText = 'Ingeniería en computación (2024)'
 }
